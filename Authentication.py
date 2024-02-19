@@ -58,3 +58,6 @@ else:
                 st.success("Login successful!")
             else:
                 st.error("Invalid username or password")
+
+        if session_state.logged_in:
+            st.write(f"Welcome, {session_state.username}!")
